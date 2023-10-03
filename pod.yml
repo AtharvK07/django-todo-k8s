@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: django-todo
+spec:
+  containers:
+    - name: django-todo
+      image: trainwithshubham/django-todo:latest
+      ports:
+        - containerPort: 8000
